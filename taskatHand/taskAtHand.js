@@ -19,7 +19,14 @@ function TaskAtHandApp()
         $("#new-task-name").val("").focus();
       }
     }
-
+    function onEditTaskName($span)
+    {
+      $span.hide()
+        .siblings("input.task-name")
+        .val($span.text())
+        .show()
+        .focus();
+    }
     function addTaskElement(taskName)
     {
         var $task = $("#task-template .task").clone();
@@ -36,7 +43,11 @@ function TaskAtHandApp()
         $("button.move-down", $task).click(function() {
             $task.insertAfter($task.next());
         });
+        $("span.task-name", $task).click(function() {
+            onEditTaskName($(this));
+        });
     }
+
     this.start = function()
     {
         $("#new-task-name").keypress(function(e) {
