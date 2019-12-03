@@ -26,6 +26,7 @@ function TaskAtHandApp()
         var $delete = $("<button class='delete'>X</button>");
         var $moveUp = $("<button class='move-up'>^</button>");
         var $moveDown = $("<button class='move-up'>v</button>");
+        $("#task-list").append($task);
         $task.append($delete)
             .append($moveUp)
             .append($moveDown)
@@ -41,7 +42,7 @@ function TaskAtHandApp()
             $task.insertAfter($task.next());
         });
     }
-    
+
     this.start = function()
     {
         $("#new-task-name").keypress(function(e) {
