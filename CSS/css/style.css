@@ -7,6 +7,7 @@ h1 {
   padding: 50px;
   border: 10px solid blue;
   margin: 50px;
+  display: none; 
 }
 span {
   background-color: green;
