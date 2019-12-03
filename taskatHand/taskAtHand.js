@@ -11,6 +11,15 @@ function TaskAtHandApp()
 
     this.start = function()
     {
+        $("#new-task-name").keypress(function(e) {
+          if (e.which == 13) // Enter key
+          {
+            addTask();
+            return false;
+          }
+        })
+        .focus();
+
         $("#app>header").append(version);
         setStatus("ready");
     };
