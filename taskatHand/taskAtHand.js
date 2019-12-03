@@ -1,6 +1,6 @@
 "use strict";
 
-function MyApp()
+function TaskAtHandApp()
 {
     var version = "v1.0";
 
@@ -17,6 +17,6 @@ function MyApp()
 }
 
 $(function() {
-    window.app = new MyApp();
+    window.app = new TaskAtHandApp();
     window.app.start();
 });
