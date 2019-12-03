@@ -23,6 +23,10 @@ function TaskAtHandApp()
     function addTaskElement(taskName)
     {
       var $task = $("<li></li>");
+      var $delete = $("<button class='delete'>X</button>");
+      $task.append($delete)
+           .append("<span class='task-name'>" + taskName + "</span>");
+      $delete.click(function() { $task.remove(); });
       $task.text(taskName);
       $("#task-list").append($task);
     }
