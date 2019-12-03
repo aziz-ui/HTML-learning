@@ -4,9 +4,7 @@ h1 {
   font-weight: bold;
   color: #0072ae;
   background-color: black;
-  width: 300px;
   padding: 50px;
   border: 10px solid blue;
   margin: 50px;
-  box-sizing: border-box;
 }
