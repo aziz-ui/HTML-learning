@@ -7,3 +7,8 @@ h1 {
 .alt-headline {
   font-size: 40px;
 }
+.column-title {
+  font-style: normal;
+  color: #0072ae;
+  font-weight: bold;
+} 
