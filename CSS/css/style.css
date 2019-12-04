@@ -25,4 +25,7 @@ h1 {
 }
 .secondary-section div figure img {
   border: 10px solid #333;
-} 
+}
+.secondary-section img {
+  border: 10px solid blue;
+}
