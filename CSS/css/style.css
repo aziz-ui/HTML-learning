@@ -23,3 +23,6 @@ h1 {
 .secondary-section p {
   color: deeppink;
 }
+.secondary-section div figure img {
+  border: 10px solid #333;
+} 
