@@ -47,3 +47,12 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+h1 {
+  font-size: 70px;
+  line-height:1.4; 
+  font-weight: bold;
+  color: #0072ae;
+}
+.alt-headline {
+  font-size: 40px;
+}
