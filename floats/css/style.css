@@ -2,11 +2,11 @@
   margin: 30px;
   float: left;
 }
-.content-block h1 {
+.content-block {
   color: #fff;
   background-color: deeppink;
 }
 .content-block p {
   font-family: Georgia, 'Times New Roman' sans-serif;
   background-color: green;
-} 
+}
